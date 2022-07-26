@@ -1,0 +1,9 @@
+{
+  "projectName": "emmi-tutorial",
+  "meta": {
+    "type": "frontend"
+  },
+  "packageManager": "npm",
+  "hash": "2cbd8959",
+  "domain": "emmi-facilitator-daniel.mdbgo.io"
+}
