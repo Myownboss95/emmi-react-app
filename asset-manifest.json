@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/emmi-react-app/static/css/main.fbf561c4.css",
+    "main.js": "/emmi-react-app/static/js/main.e979e39a.js",
+    "static/js/787.58a56444.chunk.js": "/emmi-react-app/static/js/787.58a56444.chunk.js",
+    "static/media/slider1.jpeg": "/emmi-react-app/static/media/slider1.87717f32227e8733c962.jpeg",
+    "static/media/Image-01.jpeg": "/emmi-react-app/static/media/Image-01.0b62bde3b6c2e767135a.jpeg",
+    "static/media/logo.svg": "/emmi-react-app/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/emmi-react-app/index.html",
+    "main.fbf561c4.css.map": "/emmi-react-app/static/css/main.fbf561c4.css.map",
+    "main.e979e39a.js.map": "/emmi-react-app/static/js/main.e979e39a.js.map",
+    "787.58a56444.chunk.js.map": "/emmi-react-app/static/js/787.58a56444.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fbf561c4.css",
+    "static/js/main.e979e39a.js"
+  ]
+}
