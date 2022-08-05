@@ -1,0 +1,44 @@
+{
+  "posts": [
+    {
+      "author": "Kingsley",
+      "title": "Data Scientist",
+      "body": "he is a JS student",
+      "id": 1
+    },
+    {
+      "author": "Solomon",
+      "title": "Civil Servant",
+      "body": "Engr is here",
+      "id": 2
+    },
+    {
+      "author": "Irene",
+      "title": "Business Woman",
+      "body": "Female woman in tech",
+      "id": 3
+    },
+    {
+      "author": "Jadon",
+      "title": "Business Man",
+      "body": "Mayomi is a JS student",
+      "id": 4
+    },
+    {
+      "author": "Blessing",
+      "title": "Business Guru",
+      "body": "Prudence is a JS student",
+      "id": 5
+    },
+    {
+      "author": "Prudences",
+      "title": "Business Woman",
+      "body": "Female woman in tech",
+      "id": 6
+    }
+   
+  ],
+  "Message": {
+    "msg": "Successful fetch"
+  }
+}

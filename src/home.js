@@ -1,11 +1,11 @@
 //import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Card from 'react-bootstrap/Card'
+// import Row from 'react-bootstrap/Row';
+// import Col from 'react-bootstrap/Col';
+// import Card from 'react-bootstrap/Card'
 import PostsComponent from './postsComponent';
-import Button from 'react-bootstrap/Button';
-import imageFile from './images/Image-01.jpeg'
-import { useState } from 'react';
+// import Button from 'react-bootstrap/Button';
+// import imageFile from './images/Image-01.jpeg'
+import { useState, useEffect } from 'react';
 // import Card from 'react-bootstrap/Card'
 // import { Row, Col} from 'react-bootstrap'
 
@@ -34,16 +34,44 @@ const HomeComponent = () => {
     //     // console.log(name, age)
     // }
 
-    let posts = [
-        { author: "Kingsley", title: "Data Scientist", body: 'he is a JS student', id: 1 },
-        { author: "Solomon", title: "Civil Servant", body: 'Engr is here', id: 2 },
-        { author: "Irene", title: "Business Woman", body: 'Female woman in tech', id: 3 },
-        { author: "Mayomi", title: "Business Man", body: 'Mayomi is a JS student', id: 4 },
-        { author: "Prudence", title: "Business Lady", body: 'Prudence is a JS student', id: 5 }
-    ];
+    const [posts, setPost] = useState(null);
+    // const [name, setName] = useState('Jason');
+    
+    useEffect(
+        () =>{ 
+            fetch('http://localhost:8000/posts', {
+                method: 'GET', // or 'PUT'
+                headers: {
+                  'Content-Type': 'application/json',
+                  
+                },
+                credentials: 'same-origin'
+            })
+            .then(res=>res.json())
+            .then(
+                (data) =>{
+                    console.log(data);
+                    setPost(data)
+                }
+            )
+        }, []
+    )
+
+    // const deletePost = (id)=>{
+    //     const newPost = posts.filter(
+    //         post => post.id !== id
+    //     )
+    //     setPost(newPost)
+    // }
+    
+   
+    
     return (
         <div>
-            < PostsComponent posts={posts} />
+            {/* < PostsComponent posts={posts} /> */}
+            {/* <Button variant="secondary" onClick={()=>setName('Daniel')}>Click me to change name</Button> */}
+           {posts && < PostsComponent posts={posts}   /> }
+           
          </div>
     );
 }

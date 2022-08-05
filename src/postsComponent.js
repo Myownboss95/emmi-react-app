@@ -4,12 +4,12 @@ import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import imageFile from './images/Image-01.jpeg';
 
-const PostComponent = (data) => {
-  console.log(data);
-  const posts = data.posts;
-
+const PostComponent = ({posts}) => {
+  
   return (
           <Row>
+            {/* <h2>{name}</h2> */}
+             
                           {
               posts.map(
                 (post) => (
@@ -24,6 +24,7 @@ const PostComponent = (data) => {
                           {post.body}
                         </Card.Text>
                         <Button variant="outline-primary">Read More</Button>
+                        {/* <Button variant="danger" onClick={()=>deletePost(post.id)}>Delete Post</Button> */}
                       </Card.Body>
                     </Card>
                   </Col>
